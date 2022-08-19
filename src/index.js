@@ -25,11 +25,16 @@ client.on('ready', () => {
     console.log('Skybot is charged up and ready to fly');
 });
 
+client.on('interactionCreate', (interaction) => {
+    if (interaction.isChatInputCommand) {
+        console.log('Command Pass in Successful!');
+    }
+});
 async function main() {
     const commands = [
         {
           name: 'ping',
-          description: 'Replies with Pong!',
+          description: 'Replies with Pong!'
         },
       ];
 
