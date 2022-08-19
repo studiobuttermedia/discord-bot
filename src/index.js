@@ -28,6 +28,7 @@ client.on('ready', () => {
 client.on('interactionCreate', (interaction) => {
     if (interaction.isChatInputCommand) {
         console.log('Command Pass in Successful!');
+        interaction.reply({ content: 'Command Active!'})
     }
 });
 async function main() {
